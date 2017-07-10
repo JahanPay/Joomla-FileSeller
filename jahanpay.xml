@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension version="1.6" type="plugin" group="jspayment" method="upgrade">
+	<name>Joomseller Payment - Jahanpay</name>
+	<author>Seyed Hamzeh Fazeli</author>
+	<creationDate>26/05/2014</creationDate>
+	<copyright>Copyright (C) 2014 ModuleBank - All rights reserved.</copyright>
+	<license>do not copy please. for order or technical support call me at 09160666110</license>
+   <authorEmail>support@modulebank.ir</authorEmail>
+	<authorUrl>http://www.modulebank.ir/</authorUrl>
+	<version>1.0</version>
+	<description>Standard Jahanpay payment method for Joomseller Extensions</description>
+	<files>
+		<filename plugin="jahanpay">jahanpay.php</filename>
+		<filename>index.html</filename>
+	</files>
+	
+	<languages>
+		<language tag="en-GB">en-GB.plg_jspayment_jahanpay.ini</language>
+	</languages>
+	
+	<config>
+		<fields name="params">
+			<fieldset name="basic" label="PLG_JSPAYMENT_JAHANPAY_CONFIGURATION">
+				<field name="jahanpay_pin" type="text" size="50" default="" label="PLG_JSPAYMENT_JAHANPAY_JAHANPAY_PIN" description="PLG_JSPAYMENT_JAHANPAY_JAHANPAY_PIN_DESC" />
+				<field name="merchant_image" type="text" size="50" default="" label="PLG_JSPAYMENT_JAHANPAY_MERCHANT_IMAGE" description="PLG_JSPAYMENT_JAHANPAY_MERCHANT_IMAGE_DESC" />
+				<field name="payment_image" type="text" size="50" default="" label="PLG_JSPAYMENT_JAHANPAY_PAYMENT_LOGO" description="PLG_JSPAYMENT_JAHANPAY_PAYMENT_LOGO_DESC" />
+				<field name="buynow_btn" size="50" type="text" default="CompanyName_BuyNow_WPS_US" label="PLG_JSPAYMENT_JAHANPAY_BUYNOW_BUTTON" description="PLG_JSPAYMENT_JAHANPAY_BUYNOW_BUTTON_DESC" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>
